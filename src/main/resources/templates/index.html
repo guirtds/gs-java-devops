@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Home</title>
+    <style>
+        /* CSS para ajustar o tamanho dos botões e alinhar em linha */
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .btn-custom {
+            font-size: 0.9rem;
+            padding: 10px 15px;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Energy Saver</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/api/poste/postes">Postes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/api/consumo-energetico/consumos">Consumo Energético</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/api/economia-energetica/economias">Economia Energética</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/api/usuario/usuarios">Usuários</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/api/relatorio/relatorios">Relatórios</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container mt-5">
+    <div class="jumbotron">
+        <h1 class="display-4">Bem-vindo ao Projeto Energy Saver!</h1>
+        <hr class="my-4">
+        <p>Use a barra de navegação acima para acessar diferentes seções da aplicação.</p>
+        <div class="button-container">
+            <a class="btn btn-info btn-custom" href="/api/poste/postes" role="button">Gerenciar Postes</a>
+            <a class="btn btn-warning btn-custom" href="/api/consumo-energetico/consumos" role="button">Gerenciar Consumo Energético</a>
+            <a class="btn btn-success btn-custom" href="/api/economia-energetica/economias" role="button">Gerenciar Economia Energética</a>
+            <a class="btn btn-dark btn-custom" href="/api/usuario/usuarios" role="button">Gerenciar Usuários</a>
+            <a class="btn btn-primary btn-custom" href="/api/relatorio/relatorios" role="button">Gerenciar Relatórios</a>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
